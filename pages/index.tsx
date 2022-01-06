@@ -1,6 +1,9 @@
-import Head from "next/head";
-import Image from "next/image";
+import { Htag } from "../components";
 
 export default function Home() {
-  return <div>Asdfg</div>;
+  return (
+    <div>
+      <Htag tag="h3">Hello</Htag>
+    </div>
+  );
 }
