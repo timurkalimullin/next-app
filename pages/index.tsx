@@ -1,4 +1,4 @@
-import { Htag, Button, Ptag } from "../components";
+import { Htag, Button, Ptag, Tag } from "../components";
 
 export default function Home() {
   return (
@@ -9,6 +9,12 @@ export default function Home() {
         Btn
       </Button>
       <Ptag>Paragraph</Ptag>
+      <Tag color="green" size="s">
+        Tag component
+      </Tag>
+      <Tag color="primary" size="m">
+        Tag component
+      </Tag>
     </div>
   );
 }
