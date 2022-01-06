@@ -1,11 +1,14 @@
-import { Htag, Button } from "../components";
+import { Htag, Button, Ptag } from "../components";
 
 export default function Home() {
   return (
     <div>
       <Htag tag="h3">Hello</Htag>
-      <Button>Btn</Button>
-      <Button appearance="ghost">Btn</Button>
+      <Button arrow="right">Btn</Button>
+      <Button appearance="ghost" arrow="down">
+        Btn
+      </Button>
+      <Ptag>Paragraph</Ptag>
     </div>
   );
 }
