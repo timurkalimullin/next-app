@@ -1,7 +1,8 @@
 import React from "react";
 import { Htag, Button, Ptag, Tag, Rating } from "../components";
+import { withLayout } from "../Layout/Layout";
 
-export default function Home() {
+function Home() {
   const [r, setR] = React.useState(2);
   return (
     <div>
@@ -22,3 +23,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default withLayout(Home);
