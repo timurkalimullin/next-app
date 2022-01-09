@@ -4,8 +4,10 @@
 
 .star {
   padding: 0 5px;
+
+  transition: all 0.2s;
 }
 
-.editable svg {
+.editable {
   cursor: pointer;
 }
