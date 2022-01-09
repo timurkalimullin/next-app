@@ -36,17 +36,18 @@ export const Rating = ({
         [styles.editable]: isEditable,
       });
       return (
-        <StarIcon
-          tabIndex={isEditable ? 0 : -1}
+        <span
           onMouseEnter={() => changeDisplay(i + 1)}
           onMouseLeave={() => changeDisplay(rating)}
           onClick={() => onClick(i + 1)}
           onKeyDown={(e: React.KeyboardEvent) =>
             isEditable && handleSpace(i + 1, e)
           }
-          className={iconClass}
           key={i}
-        />
+          className={iconClass}
+        >
+          <StarIcon tabIndex={isEditable ? 0 : -1} />
+        </span>
       );
     });
     setRatingArray(updatedArray);
